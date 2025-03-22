@@ -17,10 +17,10 @@ public class Lista2_Ex4 {
 
 		Scanner scanner = new Scanner(System.in);
 
-		double[][] notasAlunos = new double[2][4];
+		double[][] notasAlunos = new double[10][4];
 
 		double somaMedias = 0;
-		double[] medias = new double[2];
+		double[] medias = new double[10];
 
 		for (int i = 0; i < notasAlunos.length; i++) {
 			for (int j = 0; j < notasAlunos[i].length; j++) {
