@@ -1,6 +1,5 @@
 package java_prat_7;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lista2_Ex4 {
