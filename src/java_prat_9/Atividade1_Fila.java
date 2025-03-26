@@ -44,24 +44,26 @@ public class Atividade1_Fila {
 			System.out.print("Entre com a opção desejada: ");
 			opcaoDesejada = scanner.nextInt();
 			
-			if (opcaoDesejada == 1) {
+			switch (opcaoDesejada) {
+			case 1:
 				adicionarPessaoAFila(fila, scanner);
-			} 
-
-			if (opcaoDesejada == 2) {
+				break;
+				
+			case 2:
 				listarClientes(fila);
-			}
-			
-			if (opcaoDesejada == 3) {
+				break;
+				
+			case 3:
 				chamarCliente(fila);
-			}
-			
-			if (opcaoDesejada == 0) {
+				break;
+				
+			case 0:
 				finalizarPrograma = false;
-			}
-			
-			if (opcaoDesejada != 1 && opcaoDesejada != 2 && opcaoDesejada != 3 && opcaoDesejada != 0) {
-				System.out.println("Opção desejada não compativel com o sistema");
+				break;
+
+			default:
+				System.out.println("\nOpção desejada não compativel com o sistema");
+				break;
 			}
 		}
 		

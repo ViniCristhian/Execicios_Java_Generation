@@ -42,25 +42,26 @@ public class Atividade2_Pilha {
 			System.out.print("Entre com a opção desejada: ");
 			opcaoDesejada = scanner.nextInt();
 			
-			if (opcaoDesejada == 1) {
+			switch (opcaoDesejada) {
+			case 1:
 				adicionarLivroAPilha(pilha, scanner);
-			} 
-
-			if (opcaoDesejada == 2) {
-				listarLivros(pilha);
-			}
-			
-			if (opcaoDesejada == 3) {
-				retirarLivro(pilha);
-			}
-			
-			if (opcaoDesejada == 0) {
-				finalizarPrograma = false;
+				break;
 				
-			}
-			
-			if (opcaoDesejada != 1 && opcaoDesejada != 2 && opcaoDesejada != 3 && opcaoDesejada != 0) {
+			case 2:
+				listarLivros(pilha);
+				break;
+				
+			case 3:
+				retirarLivro(pilha);
+				break;
+				
+			case 0:
+				finalizarPrograma = false;
+				break;
+
+			default:
 				System.out.println("\nOpção desejada não compativel com o sistema");
+				break;
 			}
 		}
 		
